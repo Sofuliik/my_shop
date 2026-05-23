@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="menu"> 
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+    </ul>
+    <hr>
+    <h1>Каталог товаров</h1>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">Все</button>
+        <button class="filter-btn" data-category="sweet">Сладости</button>
+        <button class="filter-btn" data-category="spice">Специи</button>
+    </div>
+
+    <div class="products-container">
+        <div class="product-card" data-category="sweet">
+            <img src="images/churchkhela.jpg" alt="чурчхелла" width="200">
+            <h3>Чурчхелла</h3>
+            <p>Традиционная грузинская сладость из орехов в виноградном соке.</p>
+            <p class="price">60 ₽ / 100г</p>
+            <button class="add-to-basket" 
+                    data-id="1" 
+                    data-name="Чурчхелла" 
+                    data-price="60">
+                Добавить в корзину
+            </button>
+            <a href="item.html">Подробнее</a>
+        </div>
+
+        <div class="product-card" data-category="spice">
+            <img src="images/spices.jpg" alt="ассорти специй" width="200">
+            <h3>Ассорти специй</h3>
+            <p>Набор грузинских специй: хмели-сунели, сванская соль, кинза.</p>
+            <p class="price">90 ₽ / 100г</p>
+            <button class="add-to-basket" 
+                    data-id="2" 
+                    data-name="Ассорти специй" 
+                    data-price="90">
+                Добавить в корзину
+            </button>
+            <a href="item1.html">Подробнее</a>
+        </div>
+    </div>
+
+    <div class="basket">
+        <h3>Корзина</h3>
+        <div id="basket-items">
+            <p>Корзина пуста</p>
+        </div>
+        <div class="basket-total">
+            <strong id="basket-total">Итого: 0 ₽</strong>
+        </div>
+        <div class="basket-buttons">
+            <button id="clear-basket">Очистить</button>
+            <button id="checkout">Оплатить</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; Все права защищены</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

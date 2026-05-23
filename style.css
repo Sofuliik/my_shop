@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(250, 235, 220);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.menu {
+    list-style-type: none; 
+}
+
+.menu a {
+    color: rgb(5, 105, 171);       
+    font-size: 18px;                  
+    font-weight: bold;                
+    text-decoration: none;             
+}
+
+.menu a:hover {
+    color: rgb(143, 19, 6);      
+    text-decoration: underline;         
+}
+
+.item-page h2 {
+    color: black;                     
+    font-size: 18px;                    
+    font-weight: 400;                    
+    background-color: rgb(240, 216, 192);
+}
+
+.item-page .short-description {
+    color:  rgb(133, 87, 16);
+    font-size: 14px;
+    font-style: italic; 
+    line-height: 16px;
+}
+
+.item-page .detailed-description {
+    color: rgb(173, 119, 35);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.item-page ul {
+    color: rgb(110, 81, 36);
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.characteristics li{
+    margin-bottom: 10px;                  
+    padding-left: 25px;                  
+    background-image: url('images/marker.png'); 
+    background-repeat: no-repeat;      
+    background-position: left center;      
+    background-size: 16px 16px;            
+} 
+
+
+
+
+.filters {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.filter-btn.active {
+    background: rgb(5, 105, 171);
+    color: white;
+}
+
+.filter-btn:hover {
+    background: rgb(143, 19, 6);
+    color: white;
+}
+
+
+.products-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(5, 105, 171);
+}
+
+.add-to-basket {
+    background: rgb(5, 105, 171);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.add-to-basket:hover {
+    background: rgb(143, 19, 6);
+}
+
+
+
+.basket {
+    border: 2px solid rgb(240, 216, 192);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#basket-items {
+    min-height: 100px;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.basket-item button {
+    background: rgb(220, 53, 69);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.basket-total {
+    text-align: right;
+    margin: 15px 0;
+}
+
+.basket-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#clear-basket {
+    background: rgb(220, 53, 69);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#checkout {
+    background: rgb(40, 167, 69);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
